@@ -1,0 +1,18 @@
+{
+    "manifest_version":3,
+    "name":"JWT Resolver",
+    "description":"Extension for resolving JWT by using selection",
+    "version":"1.0",
+    "action":{
+        "default_popup":"./popup/popup.html",
+        "default_icon":"icon.png"
+    },
+    "content_scripts":[
+        {
+            "js":["./event_listeners/on_text_selected.js"],
+            "matches":[
+                "*://*/*"
+            ]
+        }
+    ]
+}
