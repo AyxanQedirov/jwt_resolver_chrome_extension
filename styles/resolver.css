@@ -1,0 +1,12 @@
+.resolver{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 99999;
+
+    background-color: red;
+    height: 60vh;
+    width: 400px;
+    
+    border-radius: 20px;
+}

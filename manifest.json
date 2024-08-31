@@ -9,7 +9,8 @@
     },
     "content_scripts":[
         {
-            "js":["./event_listeners/on_text_selected.js"],
+            "js":["./scripts/on_text_selected.js","./scripts/init.js"],
+            "css":["./styles/resolver.css"],
             "matches":[
                 "*://*/*"
             ]
