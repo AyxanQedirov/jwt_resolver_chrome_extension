@@ -1,17 +1,22 @@
 {
-    "manifest_version":3,
-    "name":"JWT Resolver",
-    "description":"Extension for resolving JWT by using selection",
-    "version":"1.0",
-    "action":{
-        "default_popup":"./popup/popup.html",
-        "default_icon":"icon.png"
+    "manifest_version": 3,
+    "name": "JWT Resolver",
+    "description": "Extension for resolving JWT by using selection",
+    "version": "1.0",
+    "action": {
+        "default_popup": "./popup/popup.html",
+        "default_icon": "icon.png"
     },
-    "content_scripts":[
+    "content_scripts": [
         {
-            "js":["./scripts/on_text_selected.js","./scripts/init.js"],
-            "css":["./styles/resolver.css"],
-            "matches":[
+            "js": [
+                "./scripts/on_text_selected.js",
+                "./scripts/init.js"
+            ],
+            "css": [
+                "./styles/resolver.css"
+            ],
+            "matches": [
                 "*://*/*"
             ]
         }

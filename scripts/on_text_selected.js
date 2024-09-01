@@ -1,5 +1,23 @@
+let jwt;
+document.addEventListener("selectionchange", (event) => {
+    var selectedText = window.getSelection().toString();
 
-document.addEventListener("selectionchange",(event)=>{
- var selectedText = window.getSelection().toString();
- console.log(selectedText);
+    if (selectedText == "") {
+        hideResolver();
+        return;
+    }
+
+    jwt = atob(selectedText);
+    showResolver();
 });
+
+
+function hideResolver() {
+    var resolver = document.getElementsByClassName("resolver")[0];
+    resolver.classList.add("hidden");
+}
+
+function showResolver() {
+    var resolver = document.getElementsByClassName("resolver")[0];
+    resolver.classList.remove("hidden");
+}

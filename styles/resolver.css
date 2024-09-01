@@ -1,12 +1,31 @@
-.resolver{
+.resolver {
     position: fixed;
     bottom: 10px;
     left: 10px;
     z-index: 99999;
 
-    background-color: red;
-    height: 60vh;
-    width: 400px;
-    
+    background-color: #4379F7;
+    height: 50px;
+    width: 50px;
     border-radius: 20px;
+    cursor:  pointer;
+    transition: 0.4s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resolver:hover{
+    height: 60px;
+    width: 60px;
+    
+}
+
+.resolver-icon{
+    font-size: 20px;
+}
+
+.hidden {
+    visibility: hidden;
 }
