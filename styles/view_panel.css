@@ -1,0 +1,11 @@
+.jr-view-panel {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 9999;
+
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+    height: 60vh;
+    width: 20%;
+}

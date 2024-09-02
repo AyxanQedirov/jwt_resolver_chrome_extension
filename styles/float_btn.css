@@ -1,31 +1,27 @@
-.resolver {
+.jr-float-btn {
     position: fixed;
     bottom: 10px;
     left: 10px;
     z-index: 99999;
 
-    background-color: #4379F7;
+    background-color: var(--primaryColor);
     height: 50px;
     width: 50px;
     border-radius: 20px;
-    cursor:  pointer;
-    transition: 0.4s ease;
+    cursor: pointer;
+    transition: width 0.4s ease, height 0.4s ease;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.resolver:hover{
+.jr-float-btn:hover {
     height: 60px;
     width: 60px;
-    
+
 }
 
-.resolver-icon{
+.jr-float-icon {
     font-size: 20px;
-}
-
-.hidden {
-    visibility: hidden;
 }

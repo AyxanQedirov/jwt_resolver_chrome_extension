@@ -10,11 +10,13 @@
     "content_scripts": [
         {
             "js": [
-                "./scripts/on_text_selected.js",
-                "./scripts/init.js"
+                "./scripts/init.js",
+                "./scripts/on_text_selected.js"
             ],
             "css": [
-                "./styles/resolver.css"
+                "./styles/core.css",
+                "./styles/float_btn.css",
+                "./styles/view_panel.css"
             ],
             "matches": [
                 "*://*/*"

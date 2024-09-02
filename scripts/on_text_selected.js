@@ -13,11 +13,11 @@ document.addEventListener("selectionchange", (event) => {
 
 
 function hideResolver() {
-    var resolver = document.getElementsByClassName("resolver")[0];
-    resolver.classList.add("hidden");
+    var resolver = document.getElementsByClassName("jr-float-btn")[0];
+    resolver.classList.add("jr-hidden");
 }
 
 function showResolver() {
-    var resolver = document.getElementsByClassName("resolver")[0];
-    resolver.classList.remove("hidden");
+    var resolver = document.getElementsByClassName("jr-float-btn")[0];
+    resolver.classList.remove("jr-hidden");
 }

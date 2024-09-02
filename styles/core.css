@@ -1,0 +1,7 @@
+:root{
+    --primaryColor:#4379F7;
+}
+
+.jr-hidden {
+    visibility: hidden;
+}
