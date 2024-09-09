@@ -1,3 +1,4 @@
+
 let body = document.getElementsByTagName("body")[0];
 
 // floatBtn creating side
@@ -11,6 +12,7 @@ body.appendChild(floatBtn);
 let viewPanel = document.createElement("div");
 viewPanel.classList.add("jr-view-panel");
 viewPanel.classList.add("jr-hidden");
+
 body.appendChild(viewPanel);
 
 

@@ -5,7 +5,8 @@
     z-index: 9999;
 
     border-radius: 10px;
-    background-color: var(--primaryColor);
+    background-color: var(--lightColor);
+    box-shadow: var(--box-shadow-1);
     height: 60vh;
     width: 500px;
 }

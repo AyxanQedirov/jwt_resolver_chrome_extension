@@ -1,4 +1,5 @@
 let jwt;
+
 document.addEventListener("selectionchange", (event) => {
     var selectedText = window.getSelection().toString();
 
@@ -8,7 +9,12 @@ document.addEventListener("selectionchange", (event) => {
     }
 
     showResolver();
-    //jwt = atob(selectedText);
+    try {
+
+    } catch (ex) {
+
+        jwt = atob(selectedText);
+    }
 });
 
 
@@ -20,6 +26,8 @@ function hideResolver() {
 }
 
 function showResolver() {
+    var viewPanel = document.getElementsByClassName("jr-view-panel")[0];
+    viewPanel.classList.add("jr-hidden");
     setTimeout(() => {
         var resolver = document.getElementsByClassName("jr-float-btn")[0];
         resolver.classList.remove("jr-hidden");
