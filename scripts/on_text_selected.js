@@ -7,17 +7,22 @@ document.addEventListener("selectionchange", (event) => {
         return;
     }
 
-    jwt = atob(selectedText);
     showResolver();
+    //jwt = atob(selectedText);
 });
 
 
 function hideResolver() {
-    var resolver = document.getElementsByClassName("jr-float-btn")[0];
-    resolver.classList.add("jr-hidden");
+    setTimeout(() => {
+        var resolver = document.getElementsByClassName("jr-float-btn")[0];
+        resolver.classList.add("jr-hidden");
+    }, 1000);
 }
 
 function showResolver() {
-    var resolver = document.getElementsByClassName("jr-float-btn")[0];
-    resolver.classList.remove("jr-hidden");
+    setTimeout(() => {
+        var resolver = document.getElementsByClassName("jr-float-btn")[0];
+        resolver.classList.remove("jr-hidden");
+    }, 1000);
 }
+

@@ -1,9 +1,9 @@
 let body = document.getElementsByTagName("body")[0];
 
-
 // floatBtn creating side
 let floatBtn = document.createElement("div");
 floatBtn.classList.add("jr-float-btn");
+floatBtn.classList.add("jr-hidden");
 floatBtn.innerHTML = "<span class=\"jr-float-icon\">👀</span>";
 body.appendChild(floatBtn);
 
@@ -15,8 +15,7 @@ body.appendChild(viewPanel);
 
 
 // Adding event listeners to elements
-floatBtn.addEventListener("click", () => {
+floatBtn.addEventListener("click",()=>{
     floatBtn.classList.add("jr-hidden");
     viewPanel.classList.remove("jr-hidden");
 });
-
