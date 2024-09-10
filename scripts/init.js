@@ -12,6 +12,19 @@ body.appendChild(floatBtn);
 let viewPanel = document.createElement("div");
 viewPanel.classList.add("jr-view-panel");
 viewPanel.classList.add("jr-hidden");
+viewPanel.innerHTML=`
+<div class="jr-view-panel-head">
+
+</div>
+
+<div class="jr-view-panel-body">
+    
+</div>
+
+<div class="jr-view-panel-footer">
+    
+</div>
+`;
 
 body.appendChild(viewPanel);
 
