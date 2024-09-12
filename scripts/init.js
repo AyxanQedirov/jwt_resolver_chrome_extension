@@ -14,14 +14,10 @@ viewPanel.classList.add("jr-view-panel");
 viewPanel.classList.add("jr-hidden");
 viewPanel.innerHTML=`
 <div class="jr-view-panel-head">
-
+    <button class="btn">Close</button>
 </div>
 
 <div class="jr-view-panel-body">
-    
-</div>
-
-<div class="jr-view-panel-footer">
     
 </div>
 `;

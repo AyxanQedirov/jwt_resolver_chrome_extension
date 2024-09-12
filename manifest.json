@@ -11,12 +11,14 @@
         {
             "js": [
                 "./scripts/init.js",
-                "./scripts/on_text_selected.js"
+                "./scripts/on_text_selected.js",
+                "./bootstrap/bootstrap.min.js"
             ],
             "css": [
                 "./styles/core.css",
                 "./styles/float_btn.css",
-                "./styles/view_panel.css"
+                "./styles/view_panel.css",
+                "./bootstrap/bootstrap.min.css"
             ],
             "matches": [
                 "*://*/*"

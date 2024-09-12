@@ -22,11 +22,6 @@
 }
 
 .jr-view-panel-body{
-    flex: 4;
-    border: 1px solid red;
-}
-
-.jr-view-panel-footer{
-    flex: 1;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    flex: 7;
 }
